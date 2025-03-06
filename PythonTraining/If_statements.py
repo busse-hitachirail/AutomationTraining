@@ -1,7 +1,53 @@
-countries = ['india','usa','nepal','canada']
+cars = ['audi', 'bmw', 'subaru', 'toyota']
 
-for country in countries:
-    if country == 'nepal':
-        print(country.upper())
+for car in cars:
+    if car == 'audi':
+        print(car.upper())
     else:
-        print(country.title())
+        print(car.title())
+
+# At the heart of every if statement is an expression
+# that can be evaluated as True or False and is called
+# a conditional test.
+
+car = 'bmw'
+print(car == 'bmw')
+
+car = 'audi'
+print(car == 'suzuki')
+
+car = 'Honda'
+print(car == 'honda')
+
+car = 'Audi'
+print(car.lower() == 'audi')
+print(car)
+
+type_test = 'manual'
+if type_test != 'automation':  # Testing for inequality
+    print("Need more automation test!")
+
+age = 18
+print(age == 18)
+
+bob_age = 58
+if bob_age != 42:
+    print(f'{bob_age}, this is the right age.' )
+
+age = 19
+print(age < 21)
+print(age <= 21)
+print(age > 21)
+print(age >= 21)
+
+age_0 = 22
+age_1 = 18
+print(age_0 >= 21 and age_1 >= 21)
+
+age_1 = 22
+print(age_0 >= 21 and age_1 >= 21)
+
+
+
+
+
