@@ -44,10 +44,18 @@ age_0 = 22
 age_1 = 18
 print(age_0 >= 21 and age_1 >= 21)
 
-age_1 = 22
+age_1 = 21
 print(age_0 >= 21 and age_1 >= 21)
+print(age_0 >= 21 or age_1 >= 21)
 
+name_planets = ['mercury', 'venus', 'earth']
+print('earth' in name_planets)
+print('moon' in name_planets)
 
+testers_name = ['sasha', 'tek', 'alan']
+manager = 'naren'
 
+if manager not in testers_name:
+    print(f"{manager.title()}, you are just a manager! not a great tester!" )
 
-
+# Bottom line Boolean Expression is just another name for conditional test!!!
