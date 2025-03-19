@@ -40,6 +40,7 @@ print(age <= 21)
 print(age > 21)
 print(age >= 21)
 
+
 age_0 = 22
 age_1 = 18
 print(age_0 >= 21 and age_1 >= 21)
@@ -62,15 +63,16 @@ if manager not in testers_name:
 
 # If statements
 
-age = 19
+age = 16
 if age >= 18:
     print("You are old enough to vote")
     print("Please make sure you can vote")
+    print("Make sure you vote")
 else:
     print("You are not eligible to vote")
 
 # If - elif - else
-age = 12
+age = 45
 if age < 4:
     print("Your ticket price is $4")
 elif age < 18:
@@ -79,9 +81,9 @@ else:
     print("Your ticket price is $40")
 
 # Another way to write it
-age = 20
+age = 60
 if age < 4:
-    price = 4
+    price = 5
 elif age < 18:
     price = 25
 else:
@@ -115,15 +117,15 @@ print(f"Your admission cost is ${price}.")
 # What to do when you have to test multiple conditions?
 cars_buy = ['leather', 'Alarm']
 if 'leather' in cars_buy:
-    print("Would like the leather Option")
+    print("Would you like the leather Option?")
 if 'GPS' in cars_buy:
-    print("Would like the GPS Option")
+    print("Would you like the GPS Option?")
 if 'Alarm' in cars_buy:
-    print('Would like the Alarm option')
+    print('Would like the Alarm option?')
 
 print('\nThe Car is available with your options')
 
-#What will happen here? and why?
+# What will happen here? and why?
 requested_toppings = ['mushrooms', 'extra cheese']
 
 if 'mushrooms' in requested_toppings:
@@ -155,7 +157,7 @@ print("\nFinished making your pizza!")
 requested_toppings = ['mushrooms', 'green peppers', 'extra cheese']
 
 for requested_topping in requested_toppings:
-    if requested_topping == 'green peppers':
+    if requested_topping == 'pineapple':
         print("Sorry, we are out of green peppers right now.")
     else:
         print(f"Adding {requested_topping}.")
