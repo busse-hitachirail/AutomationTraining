@@ -82,7 +82,7 @@ print(f"New position: {alien_0['x_position']}")
 print()
 
 programming_language = {
-    'sasha': 'c++',
+    'sasha': 'rust',
     'tek' : 'java',
     'mike' : 'python',
     'alan' : 'python'
@@ -94,6 +94,7 @@ print()
 
 for name, language in programming_language.items():
     print(f"{name.title()}'s favorite language is {language.title()}.")
+print()
 print()
 
 for name in programming_language.keys():
@@ -146,6 +147,7 @@ country_name = {
     'states' : 50,
     'bird' : 'bald eagle'
 }
+# Rewrite it as a Set
 
 for key, value in country_name.items(): #items returns sequence for key-value pairs
     print(f"\nKey: {key.title()}") # \n insert bland line
@@ -153,6 +155,7 @@ for key, value in country_name.items(): #items returns sequence for key-value pa
     print()
     print()
 
+# Convert Dictionary into a List
 alien_0 = {'color': 'green', 'points': 5}
 alien_1 = {'color': 'yellow', 'points': 10}
 alien_2 = {'color': 'red', 'points': 15}
@@ -162,12 +165,13 @@ for alien in aliens:
     print(alien)
     print()
 
+# Alan and Tek will fix this Code.
 testers = []
-for tester in testers in range(20):
+while tester in testers :
     automation_tester = {'programming': 'python', 'experience': 3, 'state': 'USA'}
     testers.append(automation_tester)
 for tester in testers[:10]:
-    print("...")
+    print()
 print(f"Total number of testers: {len(testers)}")
 
 
