@@ -136,18 +136,6 @@ Use a loop to print the name of each river included in the dictionary.
 Use a loop to print the name of each country included in the dictionary.
 """
 
-
-
-
-
-
-
-
-
-
-
-
-
 train_details = {'track': 10, 'speed':'slow'}
 train_name = train_details.get('name', 'no name assigned' )
 #print(train_details)
@@ -162,3 +150,28 @@ country_name = {
 for key, value in country_name.items(): #items returns sequence for key-value pairs
     print(f"\nKey: {key.title()}") # \n insert bland line
     print(f"Value: {value}")
+    print()
+    print()
+
+alien_0 = {'color': 'green', 'points': 5}
+alien_1 = {'color': 'yellow', 'points': 10}
+alien_2 = {'color': 'red', 'points': 15}
+
+aliens = [alien_0, alien_1, alien_2]
+for alien in aliens:
+    print(alien)
+    print()
+
+testers = []
+for tester in testers in range(20):
+    automation_tester = {'programming': 'python', 'experience': 3, 'state': 'USA'}
+    testers.append(automation_tester)
+for tester in testers[:10]:
+    print("...")
+print(f"Total number of testers: {len(testers)}")
+
+
+
+
+
+
