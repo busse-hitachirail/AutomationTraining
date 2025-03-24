@@ -155,24 +155,20 @@ for key, value in country_name.items(): #items returns sequence for key-value pa
     print()
     print()
 
-# Convert Dictionary into a List
-alien_0 = {'color': 'green', 'points': 5}
-alien_1 = {'color': 'yellow', 'points': 10}
-alien_2 = {'color': 'red', 'points': 15}
-
-aliens = [alien_0, alien_1, alien_2]
-for alien in aliens:
-    print(alien)
-    print()
 
 # Alan and Tek will fix this Code.
 testers = []
-while tester in testers :
+for tester in testers :
     automation_tester = {'programming': 'python', 'experience': 3, 'state': 'USA'}
     testers.append(automation_tester)
 for tester in testers[:10]:
     print()
 print(f"Total number of testers: {len(testers)}")
+
+
+
+
+
 
 
 

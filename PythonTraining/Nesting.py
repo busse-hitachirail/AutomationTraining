@@ -85,7 +85,7 @@ for username, user_info in users.items():
 
 
 """
---- People: Start with the program you wrote for Exercise 6-1 (page 98). 
+--- People: 
 Make two new dictionaries representing different people, 
 and store all three dictionaries in a list called people. 
 Loop through your list of people. 

@@ -17,7 +17,5 @@ for country, code in sorted(country_dial.items()):
     if code < 70:
         print(country)
 
-# What is a Set?
-# What is a Hashable Object
-# 
+
 
