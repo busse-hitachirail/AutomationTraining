@@ -1,5 +1,3 @@
-from itertools import product
-
 print(type(len))
 test = "This is a word that can make a difference"
 test_1 = ["This is a world"]
