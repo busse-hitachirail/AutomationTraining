@@ -1,4 +1,5 @@
 # Input
+from http.client import responses
 
 name = input("Please enter your name: ")
 print(f"\nHello, {name}!")
@@ -86,9 +87,11 @@ print('________________________________')
 
 # Infinite Loop - Fix this Infinite Loop
 # This loop runs forever!
-"""x = 1
+x = 1
 while x <= 5:
-    print(x) """
+    print(x)
+    break # or x += 1
+print(x)
 
 # Setting a Flag
 prompt = "\nTell me something, and I will repeat it back to you:"
@@ -104,7 +107,7 @@ while active:
         print(message)
 
 
-T
+
 
 # Homework
 """Movie Tickets: A movie theater charges different ticket prices depending on a person’s age. 
@@ -115,6 +118,58 @@ Use a conditional test in the while statement to stop the loop.
 Use an active variable to control how long the loop runs. 
 Use a break statement to exit the loop when the user enters a 'quit' value.
 """
+
+
+print("------------------------------")
+
+unconfirmed_users = ['tek', 'diana', 'frank']
+confirmed_users = []
+# Verify each user until there are no more unconfirmed users.
+#  Move each verified user into the list of confirmed users.
+while unconfirmed_users:
+    current_user = unconfirmed_users.pop()
+
+    print(f"Verifying user: {current_user.title()}")
+    confirmed_users.append(current_user)
+
+# Display all confirmed users.
+print("\nThe following users have been confirmed:")
+for confirmed_user in confirmed_users:
+    print(confirmed_user.title())
+
+testers = ['naren', 'tek', 'frank', 'alan', 'sasha', 'diana']
+print(testers)
+
+while 'naren' in testers:
+    testers.remove('naren')
+
+print(testers)
+
+print("__________________________")
+answers = {}
+polling_active = True  # Set a Flag
+
+while polling_active:
+    name = input("\nWhat is your name? ")
+    response = input("Which project would you like to work on?")
+    answers[name] = response
+
+    repeat = input("Would you like to let another person respond? (yes/ no) ")
+    if repeat == 'no':
+        polling_active = False
+
+print("\n--- Poll Results ---")
+for name, response in answers.items():
+    print(f"{name} would like to work on the {response} project.")
+
+
+
+
+
+
+
+
+
 
 
 

@@ -48,7 +48,7 @@ for topping in pizza['toppings']:
 
 
 favorite_languages = {
-    'sash': ['python', 'rust'],
+    'sasha': ['python', 'rust'],
     'tek': ['c'],
     'frank': ['rust', 'go'],
     'mike': ['python', 'haskell'],
@@ -70,7 +70,7 @@ users = {
 
     'alany': {
         'first': 'alan',
-        'last': 'younkin',
+        'last': 'younkins',
         'location': 'pittsburgh',
         },
     }
@@ -104,9 +104,6 @@ o make this exercise a bit more interesting,
 ask some friends to name a few of their favorite places. 
 Loop through the dictionary, 
 and print each person’s name and their favorite places. 
-
-
-
 
 """
 
