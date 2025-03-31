@@ -97,7 +97,7 @@ print(x)
 prompt = "\nTell me something, and I will repeat it back to you:"
 prompt += "\nEnter 'quit' to end the program. "
 
-active = True
+active = True # Flag
 while active:
     message = input(prompt)
 
