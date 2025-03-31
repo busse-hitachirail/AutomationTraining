@@ -26,5 +26,7 @@ class Tester:  # Class Names are Capitalized
 tester_details = Tester('Alan', 'Pittsburg')
 print(f"The tester on Australia project his name is {tester_details.name}") # Access attributes of an instance
 print(f"Our tester is located in {tester_details.location}")
+
+# We are calling the Methods
 tester_details.test_name()
 tester_details.test_write()
