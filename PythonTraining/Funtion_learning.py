@@ -136,7 +136,7 @@ def build_name(first_name, last_name):
 build_manager = build_name('super','man')
 print(build_manager)
 
-#special value None, which is used when a variable has no specific value assigned to it.
+# special value None, which is used when a variable has no specific value assigned to it.
 # Think of None as a placeholder value.
 
 
@@ -183,12 +183,11 @@ greet_users(usernames)
 
 # Modifying a List in a Function
 
-# Start with some designs that need to be printed.
+
 testers_australia = ['tek', 'alan', 'mike']
 budget = []
 
-# Simulate printing each design, until none are left.
-#  Move each design to completed_models after printing.
+
 while testers_australia:
     current_wbs= testers_australia.pop()
     print(f"testers learning: {current_wbs}")
@@ -226,8 +225,7 @@ def name_tester(*names):# Tells Python to make a tuple
     print(names)
 
 name_tester('alan')
-name_tester('mallesh', 'srini', 'doug')
-
+name_tester('mallesh', 'srini', 'doug','sasha')
 
 def name_tester(*names):
     print("\nHere are the following testers available:")
