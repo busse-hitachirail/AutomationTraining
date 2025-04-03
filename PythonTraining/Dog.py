@@ -20,6 +20,15 @@ dog2 = Dog("Lucy", "Poodle", 5)
 dog3 = Dog("Max", "German Shepherd", 2)
 dog4 = Dog("Calvin", "yorkie", 3)
 
+#Dog is the class.
+#__init__ is the constructor method. It runs when you create a new Dog.
+#self.name = name stores the dog's name.
+#bark is a method, or function tied to the class.
+
+#Class: blueprint
+#Object: instance of a class
+#Attributes: data stored in the object (like name)
+#Methods: functions that operate on the object
 # Using the bark method
 dog1.bark()
 dog2.bark()
