@@ -5,7 +5,7 @@ class Car:
         self.make = make
         self.model = model
         self.year = year
-        self.odometer_reading = 0
+        self.odometer_reading =35_000
 
 
     def get_descriptive_name(self):
@@ -22,8 +22,6 @@ class Car:
         else:
             print("You can't roll back an odometer!")
 
-
-
     def increment_odometer(self, miles):
                 """Add the given amount to the odometer reading."""
                 self.odometer_reading += miles
@@ -32,13 +30,17 @@ class Car:
 
 my_used_car = Car('subaru', 'outback', 2019)
 print(my_used_car.get_descriptive_name())
-
 my_used_car.update_odometer(23_500)
 my_used_car.read_odometer()
-
 my_used_car.increment_odometer(100)
 my_used_car.read_odometer()
 
 
+my_used_car = Car('tesla', 's3xy', 2024)
+print(my_used_car.get_descriptive_name())
+my_used_car.update_odometer(36_000)
+my_used_car.read_odometer()
+my_used_car.increment_odometer(100)
+my_used_car.read_odometer()
 
 

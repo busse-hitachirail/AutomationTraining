@@ -1,6 +1,9 @@
 def my_func():
-    x = 10  # Local scope
-    print(x)
+    z = 10  # Local scope
+    print(z)
+
+def num_func():
+    print(z)
 
 def outer():
     x = "enclosing"

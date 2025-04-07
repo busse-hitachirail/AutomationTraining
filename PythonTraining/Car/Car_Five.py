@@ -7,7 +7,6 @@ class Car:
         self.year = year
         self.odometer_reading = 40
 
-
     def get_descriptive_name(self):
         long_name = f"{self.year} {self.make} {self.model}"
         return long_name.title()
@@ -19,8 +18,8 @@ class Car:
     def update_odometer(self, mileage):
      """Set the odometer reading to the given value.
     Reject the change if it attempts to roll the odometer back."""
-     if mileage >= odometer_reading:
-        self.odometer_reading = mileage
+     if mileage >= self.odometer_reading:
+         self.odometer_reading = mileage
      else:
         print("You can't roll back an odometer!")
 
