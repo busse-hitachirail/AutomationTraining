@@ -30,6 +30,7 @@ class Car:
     def increment_odometer(self, miles):
         """Add the given amount to the odometer reading."""
         self.odometer_reading += miles
+
 class Battery:
     """A simple attempt to model a battery for an electric car."""
 
@@ -61,7 +62,7 @@ class ElectricCar(Car):
         super().__init__(make, model, year)
         self.battery = Battery()
 
- # Advice from Python Experts and Books
+# Advice from Python Experts and Books
 # As you can see, Python gives you many options for how to structure code in a large project.
 # It’s important to know all these possibilities so you can determine the best ways to organize your
 # projects as well as understand other people’s projects.

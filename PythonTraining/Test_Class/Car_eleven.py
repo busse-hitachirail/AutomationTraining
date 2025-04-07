@@ -40,7 +40,7 @@ class Battery:
             range = 150
         elif self.battery_size == 65:
             range = 225
-            print(f"This car can go about {range} miles on a full charge.") #Point the Mistake
+        print(f"This car can go about {range} miles on a full charge.") #Point the Mistake
 
 class ElectricCar(Car):
     """Represent aspects of a car, specific to electric vehicles."""

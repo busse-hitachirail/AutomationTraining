@@ -6,10 +6,10 @@
 from random import randint
 from random import choice
 
-test = randint(1, 100)
+test = randint(1, 20000)
 print(test)
 
-testers = ['alan', 'tek', 'mike', 'mike b','tek']
+testers = ['alan', 'tek', 'mike L', 'mike b','tek']
 first_choice = choice(testers).capitalize()
 print(first_choice)
 
