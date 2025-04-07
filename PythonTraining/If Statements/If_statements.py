@@ -123,7 +123,7 @@ if 'GPS' in cars_buy:
 if 'Alarm' in cars_buy:
     print('Would like the Alarm option?')
 
-print('\nThe Car is available with your options')
+print('\nThe Test_Class is available with your options')
 
 # What will happen here? and why?
 requested_toppings = ['mushrooms', 'extra cheese']

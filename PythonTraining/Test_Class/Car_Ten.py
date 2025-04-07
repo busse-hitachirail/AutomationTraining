@@ -2,7 +2,7 @@
 # that work together; this approach is called composition.
 # # In these situations, you might recognize that part of one class can be written as a separate class.
 # # The super() function is a special function that allows you to call a method from the parent class.
-# # This line tells Python to call the __init__() method from Car,
+# # This line tells Python to call the __init__() method from Test_Class,
 # # which gives an ElectricCar instance all the attributes defined in that method.
 # # The name super comes from a convention of calling the parent class a superclass and the child class a subclass.
 
