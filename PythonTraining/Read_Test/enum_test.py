@@ -1,3 +1,7 @@
+# An enum (short for enumeration) is a special data type used to define a set of named constant values.
+# Think of it like a list of related options with clear names—except
+# you can’t accidentally change them, and they make your code more readable and reliable.
+
 from enum import Enum
 
 class Color(Enum):
