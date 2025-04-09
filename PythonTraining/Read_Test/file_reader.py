@@ -3,3 +3,9 @@ path = Path('pi_digits.txt') # Python provides a module called pathlib that make
 contents = path.read_text()
 contents = contents.rstrip()
 print(contents)
+
+path = Path('pi_digits.txt')
+contents = path.read_text()
+lines = contents.splitlines()
+for line in lines:
+    print(line)
