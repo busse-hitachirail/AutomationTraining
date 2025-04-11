@@ -1,0 +1,5 @@
+(Lacking universally accepted terminology to talk about classes,
+I will make occasional use of Smalltalk and C++ terms.
+I would use Modula-3 terms, since its object-oriented
+semantics are closer to those of Python than C++,
+but I expect that few readers have heard of it.)

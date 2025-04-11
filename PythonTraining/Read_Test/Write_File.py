@@ -9,6 +9,7 @@ path = Path('programming.txt')
 path.write_text("I love programming.") # If the file that path points to doesn’t exist, it creates that file.
 # Also, after writing the string to the file, it makes sure the file is closed properly.
 
+
 from pathlib import Path
 
 contents = "I love programming.\n"

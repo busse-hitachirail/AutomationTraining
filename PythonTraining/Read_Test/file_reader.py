@@ -6,6 +6,6 @@ print(contents)
 
 path = Path('pi_digits.txt')
 contents = path.read_text()
-lines = contents.splitlines()
+lines = contents.splitlines() # splitlines() is a string method used to split a string into a list of lines
 for line in lines:
     print(line)
