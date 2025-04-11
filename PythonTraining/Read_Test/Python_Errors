@@ -1,0 +1,90 @@
+In Python, BaseException is the top-level base class for all
+built-in exceptions.
+It sits at the very top of the exception hierarchy.
+All other exceptions, including Exception,
+SystemExit, KeyboardInterrupt, and custom exceptions,
+ultimately inherit
+from BaseException.
+------------------
+
+In Python 3.11 two new exceptions were added: BaseExceptionGroup,
+which inherits from BaseException, and ExceptionGroup,
+which inherits from Exception.
+The purpose of exception groups is to bundle exceptions
+together to make it possible to handle more than one
+exception at a time.
+While the most common case is that exceptions occur one at a time,
+in concurrent programming, multiple exceptions can be raised at
+practically the same time.
+
+-----------------------------------------
+
+BaseException
+    BaseExceptionGroup
+    GeneratorExit
+    KeyboardInterrupt
+    SystemExit
+    Exception
+        ArithmeticError
+            FloatingPointError
+            OverflowError
+            ZeroDivisionError
+        AssertionError
+        AttributeError
+        BufferError
+        EOFError
+        ExceptionGroup [BaseExceptionGroup]
+        ImportError
+            ModuleNotFoundError
+        LookupError
+            IndexError
+            KeyError
+        MemoryError
+        NameError
+            UnboundLocalError
+        OSError
+            BlockingIOError
+            ChildProcessError
+            ConnectionError
+                BrokenPipeError
+                ConnectionAbortedError
+                ConnectionRefusedError
+                ConnectionResetError
+            FileExistsError
+            FileNotFoundError
+            InterruptedError
+            IsADirectoryError
+            NotADirectoryError
+            PermissionError
+            ProcessLookupError
+            TimeoutError
+        ReferenceError
+        RuntimeError
+            NotImplementedError
+            PythonFinalizationError
+            RecursionError
+        StopAsyncIteration
+        StopIteration
+        SyntaxError
+            IncompleteInputError
+            IndentationError
+                TabError
+        SystemError
+        TypeError
+        ValueError
+            UnicodeError
+                UnicodeDecodeError
+                UnicodeEncodeError
+                UnicodeTranslateError
+        Warning
+            BytesWarning
+            DeprecationWarning
+            EncodingWarning
+            FutureWarning
+            ImportWarning
+            PendingDeprecationWarning
+            ResourceWarning
+            RuntimeWarning
+            SyntaxWarning
+            UnicodeWarning
+            UserWarning
