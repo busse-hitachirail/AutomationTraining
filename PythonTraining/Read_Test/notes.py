@@ -20,7 +20,7 @@
 # Context Managers
 # Context managers are great for things like locking and unlocking resources, closing files,
 # committing database transactions, and so on
-#Python’s philosophy is that errors shouldn’t pass silently unless they’re explicitly silenced.
+# Python’s philosophy is that errors shouldn’t pass silently unless they’re explicitly silenced.
 """Python’s exception-handling mechanism and exception classes provide a rich system to handle runtime errors in your code.
 Python exception types are organized in a hierarchy because exceptions, like all objects in Python, are classes.
 By using try, except, else, and finally blocks, and by selecting and even creating the types of exceptions caught,
@@ -33,6 +33,7 @@ You can easily define your own exception. The following two lines do this for yo
 class MyError(Exception):
     pass
 raise MyError("Some information about what went wrong")
+
 This code creates a class that inherits everything from the base Exception class.
 But you don’t have to worry about that if you don’t want to.
 You can raise, catch, and handle this exception like any other exception.
