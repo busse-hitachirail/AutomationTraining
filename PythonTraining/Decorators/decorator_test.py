@@ -69,24 +69,10 @@ print(second())
 # they aren’t available outside of the parent() function
 # Python also allows you to return functions from functions
 
-def decorator(func):
-    def wrapper():
-        print("Something is happening before the function is called.")
-        func()
-        print("Something is happening after the function is called.")
-    return wrapper
 
-def say_whee():
-    print("Whee!")
 
-say_whee = decorator(say_whee) # This is where the decoration happens.
-#the name say_whee now points to the wrapper() inner function. Remember that you return wrapper as a function
-# when you call decorator(say_whee)
-print(say_whee)
 
-# wrapper() has a reference to the original say_whee() as func, and it calls that function
-# between the two calls to print()
-# a decorator wraps a function, modifying its behavior
+
 
 
 

@@ -1,3 +1,3 @@
-from decorator_test import say_whee
+from hello_decorator import say_whee
 
 say_whee()
