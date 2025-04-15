@@ -11,4 +11,4 @@ def not_during_the_night(func):
 def say_whee():
     print("Whee!")
 
-say_whee = not_during_the_night(say_whee)
+say_whee = not_during_the_night(say_whee)  #Syntatic Sugar = @

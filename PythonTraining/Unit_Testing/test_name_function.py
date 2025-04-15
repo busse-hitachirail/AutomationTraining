@@ -12,8 +12,8 @@ def test_first_last_name():
 
 def test_first_last_middle_name():
      formatted_name = get_formatted_name(
-        'frank', 'qamozart', 'erkel')
-     assert formatted_name == 'Frank Qamozart Erkel' # Find the Bug
+        'frank', 'erkel','qamozart', )
+     assert formatted_name == 'Frank Qamozart Erkel'
 
 
 

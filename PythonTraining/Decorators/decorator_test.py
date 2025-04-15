@@ -3,13 +3,18 @@ def add_one(number):
     return number + 1
 print(add_one(2))
 
-#First-Class Objects
-#In functional programming, you work almost entirely with pure functions that don’t have side effects.
-#While not a purely functional language,Python supports many
+# First-Class Objects
+# In functional programming, you work almost entirely with pure functions that don’t have side effects.
+# While not a purely functional language,Python supports many
 # functional programming concepts, including treating functions as
 # first-class objects.
-
 # Function 2
+#In Python, functions are first-class citizens. This means functions are treated like any other object — you can:
+#Assign them to variables
+#Pass them as arguments to other functions
+#Return them from other functions
+#Store them in data structures like lists or dictionaries
+
 def say_hello(name):
     return f"Hello {name}"
 

@@ -5,8 +5,9 @@ def decorator(func):
         print("Something is happening after the function is called.")
     return wrapper
 
+
 @decorator
 def say_whee():
     print("Whee!")
 
-print(say_whee())
+print(say_whee()) # Check Code

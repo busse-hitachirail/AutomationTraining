@@ -1,6 +1,15 @@
 import pytest # we have to import pytest as we are using a decorator defined in pytest
 from PythonTraining.Unit_Testing.survey import AnonymousSurvey
 
+"""A fixture in pytest is a reusable piece of setup code that runs before (and optionally after) your tests. 
+It’s a way to prepare test context or dependencies, like:
+Creating data
+Opening files
+Connecting to databases
+Initializing objects
+Mocking APIs
+You define a fixture using the @pytest.fixture is called a decorator.
+"""
 @pytest.fixture
 def language_survey():
     question = "What language did you first learn to speak?"

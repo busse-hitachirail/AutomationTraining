@@ -18,7 +18,7 @@ def test_store_single_response(language_survey):
 
 def test_store_three_responses(language_survey):
     """Test that three individual responses are stored properly."""
-    responses = ['English', 'Spanish', 'Mandarin']
+    responses = ['English', 'Spanish', 'Hindi','French']
     for response in responses:
          language_survey.store_response(response)
     for response in responses:

@@ -3,10 +3,12 @@
 # it’s designed to receive.
 # Test new code as you add it, to make sure your changes don’t break your program’s existing behavior.
 # A third-party package is a library that’s developed outside the core Python language.
+
 # Install Pytest on Pycharm
 # https://www.jetbrains.com/help/pycharm/pytest.html (Instructions to install Pytest)
-#PyCharm supports pytest, a fully functional testing framework.
+# PyCharm supports pytest, a fully functional testing framework.
 #The following features are available:
+
 #The dedicated test runner.
 #Code completion for test subject and pytest fixtures.
 #Code navigation.
@@ -14,16 +16,16 @@
 #Support for Python 2.7 and Python 3.5 and later.
 #Multiprocessing test execution
 #Python includes a tool called pip that’s used to install third-party packages.
-#python -m pip install --upgrade pip
+# python -m pip install --upgrade pip
 # python -m pip install --user pytest
 # Meaning of -m = tells Python to locate the module specified by <module_name> in sys.path
 # and run it as if it were a script — meaning, it executes the module's __main__ block if it has one.
-#What do you do when a test fails? Assuming you’re checking the right conditions,
-#a passing test means the function is behaving correctly and a failing test means
-#there’s an error in the new code you wrote. So when a test fails, don’t change the test.
-#If you do, your tests might pass, but any code that calls your function like the test does will suddenly stop working.
-#Instead, fix the code that’s causing the test to fail.
-#Examine the changes you just made to the function, and figure out how those changes broke the desired behavior.
+# What do you do when a test fails? Assuming you’re checking the right conditions,
+# a passing test means the function is behaving correctly and a failing test means
+# there’s an error in the new code you wrote. So when a test fails, don’t change the test.
+# If you do, your tests might pass, but any code that calls your function like the test does will suddenly stop working.
+# Instead, fix the code that’s causing the test to fail.
+# Examine the changes you just made to the function, and figure out how those changes broke the desired behavior.
 # What is TDD: Test Driven Development - You write failing tests before development
 # A unit test verifies that one specific aspect of a function’s behavior is correct.
 # A test case is a collection of unit tests that together prove that a function

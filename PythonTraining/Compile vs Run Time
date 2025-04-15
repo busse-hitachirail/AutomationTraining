@@ -1,0 +1,6 @@
+Aspect            | Compile Time                                 | Run Time
+When it happens   | Before program runs                          | While program is running
+Purpose           | Translate/check code                         | Execute code
+Type of errors    | Syntax, type errors (in static languages)    | Logic, runtime exceptions
+Tools used        | Compilers, linters                           | Interpreter or OS
+Fixable B Run     | Yes                                          | No, needs to run first to see
