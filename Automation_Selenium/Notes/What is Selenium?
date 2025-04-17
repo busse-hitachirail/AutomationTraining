@@ -1,0 +1,122 @@
+1. What is Selenium?
+Selenium is an open source suite composed of a set of libraries and tools that enable the automation of web browsers.
+We can see Selenium as an umbrella project with three core components: WebDriver, Grid, and IDE (Integrated Development Environment).
+Selenium WebDriver is a library that allows the driving of browsers programmatically.
+Thus, we can use Selenium WebDriver to navigate websites and interact with web pages (e.g., clicking on links, filling in forms, etc.)
+as a real user would do, in an automated fashion. The primary use of Selenium WebDriver is the automated testing of web applications.
+Other Selenium uses include the automation of web-based administration tasks or web scraping (automated web data extraction).
+
+
+2. What is Webdriver?
+Selenium WebDriver is a library that allows the controlling of web browsers automatically.
+To that aim, it provides a cross-platform API in different language bindings. (Java, Python etc..)
+Drivers (e.g., chromedriver, geckodriver, etc.) are platform-dependent binary files that receive commands from a WebDriver script
+and translate them into some browser-specific language. In the first releases of Selenium WebDriver (i.e., in Selenium 2),
+these commands (also known as the Selenium protocol) were JSON messages over HTTP (the so-called JSON Wire Protocol).
+Nowadays, this communication (still JSON over HTTP) follows a standard specification named W3C WebDriver
+
+3. Chrome Driver
+Chrome/Chromium
+chromedriver
+https://chromedriver.chromium.org
+
+4. Architecture
+The architecture has three tiers. First, we find a script using the Selenium WebDriver API (Java, JavaScript, Python, Ruby, or C#).
+This script sends W3C WebDriver commands to the second layer, in which we find the drivers.
+Finally, the third layer contains the web browsers.
+In the case of Chrome, the native browser follows the DevTools Protocol.
+DevTools is a set of developer tools for browsers based on the Blink rendering engine,
+such as Chrome, Chromium, Edge, or Opera. The DevTools Protocol is based on JSON-RPC messages
+and allows inspecting, debugging, and profiling these browsers.
+In Firefox, the native automation support uses the Marionette protocol.
+Marionette is a remote protocol based on JSON, allowing instrumenting and controlling web browsers based on the Gecko engine
+(such as Firefox).
+
+Summary of Driver:
+Selenium WebDriver allows controlling web browsers as a user would, but programmatically.
+To that aim, the Selenium WebDriver API provides a wide variety of features to navigate web pages,
+interact with web elements, or impersonate user actions, among many other capabilities.
+The target application is web-based, such as static websites, dynamic web applications,
+Single Page Applications (SPA), complex enterprise systems with a web interface, etc.
+Before using the Selenium WebDriver API, we need to manage these drivers.
+Driver management is the process of downloading, setting up, and maintaining the proper driver for a given browser.
+webdriver-manager - Python - https://pypi.org/project/webdriver-manager/
+
+5.Selenium Grid
+Selenium Grid is a group of networked hosts that provides browser infrastructure for Selenium WebDriver.
+This infrastructure enables the (parallel) execution of Selenium WebDriver
+scripts with remote browsers of a different nature (types and versions) in multiple operating systems.
+
+6.Selenium IDE
+First, in Selenium IDE, the record part captures user interactions with a browser,
+encoding these actions as Selenium commands.
+Second, we use the generated Selenium script to execute a browser session automatically (playback)
+
+7. Locators
+he Selenium WebDriver API provides different ways to locate web elements:
+by attribute (id, name, or class),
+by link text (complete or partial),
+by tag name,
+by CSS (Cascading Style Sheets) selector,
+or by XML Path Language (XPath).
+
+8. Docker and Selenium
+Another solution we can use to support the browser infrastructure for Selenium is Docker.
+Docker is an open source software technology that allows users to pack and run applications as lightweight, portable containers.
+The Docker platform has two main components: the Docker Engine, a tool for creating and running containers, and the Docker Hub,
+a cloud service for distributing Docker images.
+In the Selenium domain, we can use Docker to pack and execute containerized browsers
+
+9.Behavior Driven Development
+On Selenium | Cucumber - we can build BDD - Gherkins
+Testing framework to created automated acceptance tests following a BDD approach
+
+a) Given
+Initial context at the beginning of the scenario
+
+b)When
+Event that triggers the scenario
+
+c) Then
+Expected outcome
+
+Key Parts of a Selenium Automation Framework
+1. Page Object Model : The Selenium Page Object Model is based on the programming concepts that a page object class
+   should include all aspects of the page under test, such as the elements on the page,
+   the methods for interacting with those elements, variables, and properties associated with the class.
+   (Does not include Data) - From a maintenance point of view, changes to methods and locators are made in limited,
+   central places, reducing the amount of time required to maintain ever-changing applications.
+2. Singleton Design Pattern: "In software engineering, the singleton pattern is a software design pattern that
+    restricts the instantiation of a class to one object. This is useful when exactly one object is needed to
+    coordinate actions across the system.
+    The concept is sometimes generalized to systems that operate more efficiently
+    when only one object exists, or that restrict the instantiation to a certain number of objects.
+    The term comes from the mathematical concept of a singleton." (Wikipedia)
+3. Pytest.ini
+4. Requirements
+4. DRY: promoting the use of common classes, locators, methods, and inheritance to eliminate and
+avoid repeating the same actions over and over in multiple places.
+
+SAMPLE PROJECT AND EXPLANATION : MAY NOT WORK
+Sample Test Logging into Washington Post
+wapo_login_test/
+├── pages/
+│   ├── __init__.py
+│   ├── base_page.py
+│   └── login_page.py
+├── tests/
+│   └── test_login.py
+├── utils/
+│   ├── __init__.py
+│   └── driver_factory.py
+├── logs/
+│   └── test.log
+├── screenshots/
+│   └── failed_login.png
+├── conftest.py
+├── requirements.txt
+└── pytest.ini
+
+
+
+
