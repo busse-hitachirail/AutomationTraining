@@ -1,0 +1,24 @@
+The Selenium WebDriver's ExpectedConditions class
+provides users with common methods to check for specific
+conditions of elements on a page.
+ExpectedConditions.visibilityOfElementLocated(By by)
+
+Titles
+URLs
+Presence of elements
+Visibility of elements
+Text on elements
+Frames to switch to
+Invisibility of elements
+Element-clickable states
+Staleness of elements
+Refreshing elements
+Element selection states
+Alerts
+Number of windows
+Finding elements
+Attributes of elements
+Number of elements
+Nested elements
+JavaScript values
+

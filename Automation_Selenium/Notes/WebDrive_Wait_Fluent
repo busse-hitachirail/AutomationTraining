@@ -1,0 +1,14 @@
+The Selenium WebDriverWait class, which extends the FluentWait class,
+contains timer methods that allow waiting for a specific condition
+until it is found.
+It includes such methods as waiting until a condition is met,
+polling intervals, ignoring specific exceptions while polling, and so on.
+
+To summarize, any of the ExpectedCondition class methods can be wrapped in synchronization methods as
+in these examples to wait for element conditions like clickable, text, titles, URLs, and so on.
+It is important to keep in mind that these methods will only wait up to the designated time period at the most,
+but as soon as it finds the element, it moves on.
+This is unlike the behavior of a hardcoded sleep,
+which will wait the entire length of time passed into it.
+
+
