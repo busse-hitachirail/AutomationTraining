@@ -5,7 +5,7 @@ Selenium WebDriver is a library that allows the driving of browsers programmatic
 Thus, we can use Selenium WebDriver to navigate websites and interact with web pages (e.g., clicking on links, filling in forms, etc.)
 as a real user would do, in an automated fashion. The primary use of Selenium WebDriver is the automated testing of web applications.
 Other Selenium uses include the automation of web-based administration tasks or web scraping (automated web data extraction).
-
+Selenium = 4.0
 
 2. What is Webdriver?
 Selenium WebDriver is a library that allows the controlling of web browsers automatically.
@@ -53,7 +53,7 @@ encoding these actions as Selenium commands.
 Second, we use the generated Selenium script to execute a browser session automatically (playback)
 
 7. Locators
-he Selenium WebDriver API provides different ways to locate web elements:
+Selenium WebDriver API provides different ways to locate web elements:
 by attribute (id, name, or class),
 by link text (complete or partial),
 by tag name,
@@ -74,11 +74,18 @@ Testing framework to created automated acceptance tests following a BDD approach
 a) Given
 Initial context at the beginning of the scenario
 
-b)When
+b) When
 Event that triggers the scenario
 
 c) Then
 Expected outcome
+
+Feature: Login functionality
+  Scenario: Successful login with valid credentials
+    Given I open the login page
+    When I enter valid username and password
+    And I click the login button
+    Then I should see the homepage
 
 Key Parts of a Selenium Automation Framework
 1. Page Object Model : The Selenium Page Object Model is based on the programming concepts that a page object class
@@ -119,4 +126,10 @@ wapo_login_test/
 
 
 
-
+#Locator Strategy               Code Example                                                        Best Use Case
+#By.ID                   driver.find_element(By.ID, "email")                                 When element has a unique id
+#By.NAME                 driver.find_element(By.NAME, "username")                            Simple forms
+#By.CLASS_NAME           driver.find_element(By.CLASS_NAME, "btn")                           When class name is unique
+#By.XPATH                driver.find_element(By.XPATH, "//input[@id='q'])"                   Flexible, powerful, supports DOM navigation
+#By.CSS_SELECTOR         driver.find_element(By.CSS_SELECTOR, "#login")                      Fast and widely used
+#By.LINK_TEXT            driver.find_element(By.LINK_TEXT, "Click Here")                     For exact text links"""

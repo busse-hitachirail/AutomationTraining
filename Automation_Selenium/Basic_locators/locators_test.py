@@ -1,29 +1,51 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-
+from selenium.common.exceptions import NoSuchElementException
+import time
 
 class FindElements():
     def test(self):
-        baseURL = "https://www.letskodeit.com/practice"
+        baseURL = "http://www.google.com"
         driver = webdriver.Chrome()
         driver.get(baseURL)
-        driver.implicitly_wait(10)
+        driver.maximize_window()
+        time.sleep(2)  # Optional: Let the page load
 
-        elementsByID = driver.find_element(By.ID, "displayed-text")
-        if elementsByID is not None:
-            print("Element Found -> By Id")
+        try:
+            elementsByID = driver.find_element(By.ID, "displayed-text")
+            print("✅ Element Found -> By ID")
+        except NoSuchElementException:
+            print("❌ Element NOT Found -> By ID")
 
-        elementsByName = driver.find_element(By.NAME, "show-hide")
-        if elementsByName is not None:
-            print("Element Found -> By Name")
+        try:
+            elementsByName = driver.find_element(By.NAME, "show-hide")
+            print("✅ Element Found -> By Name")
+        except NoSuchElementException:
+            print("❌ Element NOT Found -> By Name")
 
-        elementsByXPath = driver.find_element(By.XPATH, "//input[@id='displayed-text']")
-        if elementsByXPath is not None:
-            print("Element Found -> By XPath")
+        try:
+            elementsByXPath = driver.find_element(By.XPATH, "//input[@id='displayed-text']")
+            print("✅ Element Found -> By XPath")
+        except NoSuchElementException:
+            print("❌ Element NOT Found -> By XPath")
 
-        elementsByCSS = driver.find_element(By.CSS_SELECTOR, "#displayed-text")
-        if elementsByCSS is not None:
-            print("Element Found -> By CSS")
+        try:
+            elementsByCSS = driver.find_element(By.CSS_SELECTOR, "#displayed-text")
+            print("✅ Element Found -> By CSS")
+        except NoSuchElementException:
+            print("Element NOT Found -> By CSS")
+
+        driver.quit()
+
 
 run_tests = FindElements()
 run_tests.test()
+
+
+
+
+
+
+
+
+
