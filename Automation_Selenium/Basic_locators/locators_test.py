@@ -5,7 +5,7 @@ import time
 
 class FindElements():
     def test(self):
-        baseURL = "http://www.google.com"
+        baseURL = "https://www.letskodeit.com/practice"
         driver = webdriver.Chrome()
         driver.get(baseURL)
         driver.maximize_window()
@@ -28,6 +28,12 @@ class FindElements():
             print("✅ Element Found -> By XPath")
         except NoSuchElementException:
             print("❌ Element NOT Found -> By XPath")
+
+            try:
+                elementsByXPath = driver.find_element(By.XPATH, "//input[@id='displayed-text']")
+                print("✅ Element Found -> By XPath")
+            except NoSuchElementException:
+                print("❌ Element NOT Found -> By XPath")
 
         try:
             elementsByCSS = driver.find_element(By.CSS_SELECTOR, "#displayed-text")
