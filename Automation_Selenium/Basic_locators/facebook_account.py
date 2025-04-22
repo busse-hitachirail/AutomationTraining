@@ -1,6 +1,6 @@
 from selenium import webdriver # Imports Selenium WebDriver Module
 from selenium.webdriver.common.by import By # Allows locating of elements
-from selenium.webdriver.chrome.service import Service # Wraps teh driver startup behavior, Logging, Executable, ports 4.0+
+from selenium.webdriver.chrome.service import Service # Wraps the driver startup behavior, Logging, Executable, ports 4.0+
 from selenium.webdriver.support.ui import Select, WebDriverWait # Allows you to interact with dropdowns and wait for elements to load.
 from selenium.webdriver.support import expected_conditions as EC # Provides predefined condition
 from webdriver_manager.chrome import ChromeDriverManager # Correct version of chrome driver
@@ -44,7 +44,7 @@ Select(driver.find_element(By.ID, "month")).select_by_visible_text("Apr")
 Select(driver.find_element(By.ID, "year")).select_by_visible_text("1966")
 
 # Step 7: Select gender
-driver.find_element(By.XPATH, "//input[@name='sex' and @value='2']").click()
+driver.find_element(By.XPATH, "//input[@name='sex' and @value='1']").click()
 
 # Step 8: Pause for visibility (optional)
 time.sleep(2)
@@ -54,3 +54,4 @@ print("Test Case 2 passes")
 
 # Step 10: Close browser
 driver.quit()
+
