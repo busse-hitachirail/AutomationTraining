@@ -16,5 +16,11 @@ class FindByIdName():
         if elementByName is not None:
             print("Element Found -> By Name")
 
+        elementById = driver.find_element(By.XPATH, "//*[@id='name']") #Class
+        if elementById is not None:
+            print("Element Found -> By Id")
+
 run_tests = FindByIdName()
 run_tests.test()
+
+#Contaners - Linux Based

@@ -12,6 +12,7 @@ def setup():
     time.sleep(2)
     driver.quit()
 
+
 @pytest.mark.test_1
 def test_1_enter_name(setup):
     try:
@@ -58,3 +59,4 @@ def test_5_click_alert_and_accept(setup):
         print("✅ Test 5 - Alert Button and Accept: PASSED")
     except Exception as e:
         print(f"❌ Test 5 - Alert Button and Accept: FAILED - {e}")
+

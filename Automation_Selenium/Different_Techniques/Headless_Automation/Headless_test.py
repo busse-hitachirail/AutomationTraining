@@ -6,6 +6,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 
+
 # Set Chrome options for headless mode
 chrome_options = Options()
 chrome_options.add_argument("--headless")

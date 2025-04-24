@@ -1,3 +1,5 @@
+from time import sleep
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
@@ -14,6 +16,7 @@ driver.get("https://www.letskodeit.com/practice")
 
 # Wait until the page is fully loaded
 WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "alertbtn")))
+
 
 # Click the "Alert" button
 alert_button = driver.find_element(By.ID, "alertbtn")

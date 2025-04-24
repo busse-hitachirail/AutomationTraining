@@ -1,7 +1,7 @@
 # Base Image
 FROM python:3.13-slim
 
-# Install system dependencies
+# Install system packages for Chromium and ChromeDriver
 RUN apt-get update && apt-get install -y \
     chromium \
     chromium-driver \
@@ -21,19 +21,17 @@ RUN apt-get update && apt-get install -y \
     --no-install-recommends && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# Set environment so Selenium knows where to find Chromium
+# Set Chromium path for Selenium
 ENV CHROME_BIN=/usr/bin/chromium
 ENV PATH="/usr/lib/chromium/:${PATH}"
 
-# Set working directory
+# Create app folder and copy files
 WORKDIR /app
-
-# Copy files
 COPY requirements.txt .
 COPY test_script.py .
 
-# Install Python packages
-RUN pip install --upgrade pip && pip install -r requirements.txt
+# Install Python dependencies
+RUN pip install --no-cache-dir --upgrade pip && pip install -r requirements.txt
 
-# Run the test
+# Run your script
 CMD ["python", "test_script.py"]
