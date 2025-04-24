@@ -12,3 +12,5 @@ def pytest_configure(config):
         level=logging.INFO
     )
     logging.info("===== Test session started =====")
+
+    
