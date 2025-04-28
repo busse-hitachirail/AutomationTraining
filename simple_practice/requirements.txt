@@ -1,0 +1,9 @@
+selenium==4.20.0
+pytest==8.1.1
+pytest-html==4.1.0
+webdriver-manager==4.0.1
+pyyaml==6.0.1
+
+
+# Why do we need requirements.txt document?
+# requirements.txt is where you store the name of all the libraries your project depends on.
