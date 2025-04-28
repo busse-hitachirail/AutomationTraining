@@ -1,0 +1,13 @@
+1. ID is dynamic (changes every page load) - Use Partial matches
+2. If ID does not exist - Use other Attributes other attributes like [name='car'], [class='form-input']
+3. Attribute Style [id = xxx] is a powerful way
+4. Use #idname for fixed ID's
+Example:
+<input id="bmwradio_123" type="radio" name="car" value="BMW">
+As Id is Dynamic use input[id*='bmwradio'] (Partial Match)
+
+Selector            |          Method
+[id='bmwradio']     |       Exact match
+[id^='bmw']         |       Starts with "bmw"
+[id$='radio']       |       Ends with "radio"
+[id*='bmwradio']    |       Contains "bmwradio"
