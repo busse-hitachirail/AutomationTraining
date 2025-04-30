@@ -1,6 +1,6 @@
 import pytest
-from test_data import TestData
-from sampletest_demo.practice_page import PracticePage  # Adjust import based on your project
+from sampletest_demo.Pages.practice_page import PracticePage
+
 
 @pytest.mark.usefixtures('setup')
 class TestSuiteOne:
@@ -19,5 +19,4 @@ class TestSuiteOne:
 
     @pytest.mark.test_three
     def test_select_dropdown(self):
-        self.practice_page.select_dropdown()
-
+     self.practice_page.select_dropdown()

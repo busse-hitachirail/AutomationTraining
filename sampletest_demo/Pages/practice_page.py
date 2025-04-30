@@ -1,8 +1,10 @@
 import allure
-from sampletest_demo.base_page import BasePage
-from sampletest_demo.practice_page_locators import PracticePageLocators
-
+from Pages.base_page import BasePage
+from sampletest_demo.Pages.practice_page_locators import PracticePageLocators
 class PracticePage(BasePage):
+
+    def __init__(self, driver):
+        super().__init__(driver)
 
     @allure.step('Click BMW Radio Button')
     def click_radio_button(self):

@@ -2,7 +2,7 @@ import pytest
 import os
 from dotenv import load_dotenv
 from sampletest_demo.browser_manager import WebDriverManager
-from sampletest_demo.practice_page import PracticePage
+from Pages.practice_page import PracticePage
 
 load_dotenv()
 
